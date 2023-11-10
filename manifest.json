@@ -1,0 +1,23 @@
+{
+    "name": "Nats shit fonts",
+    "description": "Customize your own shit fonts",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": {              
+          "16": "images/icon16.png",   
+          "24": "images/icon24.png",   
+          "32": "images/icon32.png"    
+        },
+        "default_title": "Click Me",   
+        "default_popup": "popup.html"  
+    },
+    
+    "content_scripts": [
+        {
+          "matches": ["https://*.pandahall.com/*"],
+          "css": ["my-styles.css"],
+          "js": ["content-script.js"]
+        }
+    ]
+}
